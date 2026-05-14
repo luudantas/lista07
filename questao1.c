@@ -13,14 +13,13 @@ void recebeNota (float nota[10])
 void calculaMedia(float nota[10])
 {
     int soma=0;
-    int cont=0, contmedia=0;
+    int contmedia=0;
     for(int j=0; j<10; j++)
     {
         soma+=nota[j];
-        cont++;
         if(nota[j]>=6) contmedia++;
     }
-    printf("Media: %.2f\n",soma/(1.0*cont));
+    printf("Media: %.2f\n",soma/10.0);
     printf("Alunos acima da media: %d\n",contmedia);
 }
 int main()
