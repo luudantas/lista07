@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 int main()
 {
     int temp[31], maior, menor, soma=0,cont=0;

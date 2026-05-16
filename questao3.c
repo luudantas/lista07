@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 void preenche(int X[10], int Y[10])
 {
     for(int i=0; i<10; i++)

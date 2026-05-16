@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+    Autora: Luana Dantas
+    Data: 16/5/26
+*/
 int main()
 {
-    int N;
+    int N, soma=0;
     scanf("%d",&N);
     int *vet = (int *)malloc(N*sizeof(int));
-    int *maior;
     for(int i=0; i<N; i++)
     {
         scanf("%d",(vet+i));
-        if(i==0) maior = vet;
-        else if(*(vet+i) >= *maior) maior = (vet+i);
+        soma += *(vet+i);
     }
-    printf("%d\n",*maior);
+    printf("%d\n",soma);
     free(vet);
     return 0;
 }
