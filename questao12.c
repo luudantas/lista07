@@ -8,7 +8,7 @@
 int main()
 {
     char *cadeia = (char *)malloc(30*sizeof(char));
-    int cons=0, vog=0;
+    int cons=-1, vog=0;
     scanf(" %[^\n]",cadeia);
     for(int i=0; i<strlen(cadeia); i++)
     {
@@ -17,7 +17,11 @@ int main()
         tolower(cadeia[i]) == 'i'||
         tolower(cadeia[i]) == 'o'||
         tolower(cadeia[i]) == 'u') vog++;
-        else if(tolower(cadeia[i])!=' ') cons++; //não considera espaços
+        else if(tolower(cadeia[i])!=' ') 
+        {
+            cons++; //não considera espaços
+            //printf("Entrou aqui\n");
+        }
     }
     printf("Vogais: %d\n", vog);
     printf("Consoantes: %d\n",cons);

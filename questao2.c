@@ -19,7 +19,7 @@ int main()
     for(int j=0;j<31;j++)
         if(temp[j]<(soma/31.0)) cont++;
     //exibe
-    printf("Menor e maior tempertura: %d e %d\n",menor, maior);
+    printf("Menor e maior temperatura: %d e %d\n", menor, maior);
     printf("Media de temperatura: %.2f\n",(soma/31.0));
     printf("Numero de dias nos quais a temperatura foi inferior a temperatura media: %d\n",cont);
     return 0;

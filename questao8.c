@@ -63,7 +63,10 @@ int main()
     for(int i=0; i<10; i++)
     {
         for(int j=0; j<10; j++)
-            printf("%d ",M[i][j]);
+        {
+            if(j>0) printf(" ");
+            printf("%d",M[i][j]);
+        }
         printf("\n");
     }
     return 0;

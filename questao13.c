@@ -8,12 +8,12 @@
 int main()
 {
     char *cadeia = (char *)malloc(30*sizeof(char));
-    char aux;
-    scanf(" %[^\n]",cadeia);
+    scanf(" %s",cadeia);
     int tam = strlen(cadeia);
-    for(int i=tam; i>=0; i--)
+    for(int i=tam-1; i>=0; i--)//não imprime o \0
     {
         printf("%c",cadeia[i]);
     }
+    printf("\n");
     return 0;
 }

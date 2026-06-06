@@ -40,7 +40,7 @@ void permuta(char *vetor, char *posicao, char *fim)
 int main() 
 {
     char *vetor = (char*)malloc(30*sizeof(int));
-    gets(vetor);
+    scanf(" %s",vetor);
     int tamanho = strlen(vetor);
     permuta(vetor, vetor, vetor + tamanho - 1); //inicio, primeira posicao, fim
     return 0;
